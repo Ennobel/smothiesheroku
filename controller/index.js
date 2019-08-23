@@ -1,3 +1,8 @@
+const trafo = require('../models').Trafo;
+
 exports.show = (req, res) => {
-    res.render('index', { title: 'map' });
+    trafo.findAll()
+    .then(data => {
+        res.render('index', {data: JSON.stringify(data)})
+    });
 }

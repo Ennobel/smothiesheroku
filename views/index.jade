@@ -9,4 +9,6 @@ html
       }
   body
     #map   
-    script(src="javascripts/map.js")
+  script(type='text/javascript').
+    var datas =!{JSON.stringify(data)};
+  script(src="javascripts/map.js")
