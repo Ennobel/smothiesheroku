@@ -3,3 +3,6 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  div(id="mapid")
+  script(src='https://unpkg.com/leaflet@1.5.1/dist/leaflet.js')
+  script(src='js/map.js')
