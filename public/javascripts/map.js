@@ -1,4 +1,5 @@
-var trafo_array = JSON.parse(datas);
+var trafo_array = JSON.parse(dataTrafos);
+var petugas_array = JSON.parse(dataPetugass);
 
 var mymap = L.map('map').setView([-7.2575, 112.7521], 13);
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
@@ -27,5 +28,10 @@ var iconTeknisi = L.icon({
 trafo_array.forEach(trafo => {
     L.marker([trafo.longitude, trafo.latitude], {icon : trafoIcon}).addTo(mymap); 
 });
+
+petugas_array.forEach(petugas => {
+    L.marker([petugas.longitude, petugas.latitude], {icon : iconTeknisi}).addTo(mymap); 
+});
+
 L.marker([-7.2575, 112.7521], {icon : trafoIcon}).addTo(mymap); //hardcode
-L.marker([-7.2575, 112.7621], {icon : iconTeknisi}).addTo(mymap);//hordcode
+L.marker([-7.2575, 112.7621], {icon : iconTeknisi}).addTo(mymap);//hardcode
