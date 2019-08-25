@@ -9,4 +9,7 @@ html
       }
   body
     #map   
-    script(src="javascripts/map.js")
+  script(type='text/javascript').
+    var dataTrafos =!{JSON.stringify(dataTrafo)}
+    var dataPetugass =!{JSON.stringify(dataPetugas)}
+  script(src="javascripts/map.js")
