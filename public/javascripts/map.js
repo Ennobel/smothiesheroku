@@ -28,15 +28,21 @@ var iconTeknisi = L.icon({
 trafo_array.forEach(trafo => {
 	var trafoMarker = L.marker([trafo.longitude, trafo.latitude], {icon : trafoIcon}).addTo(mymap); 
 	trafoMarker.bindPopup(
+		"<strong>" +
 		"id: " + trafo.id + 
-		" status: " + trafo.status
+		"<br>status: " + trafo.status + 
+		"<strong>" 
 	);
 
 });
 
 petugas_array.forEach(petugas => {
-    L.marker([petugas.longitude, petugas.latitude], {icon : iconTeknisi}).addTo(mymap); 
+   var petugasMarker = L.marker([petugas.longitude, petugas.latitude], {icon : iconTeknisi}).addTo(mymap); 
+   petugasMarker.bindPopup(
+	   "<strong>" +
+	   "id: " + petugas.id + 
+	   "<br>nama: " + petugas.name + 
+	   "<br>status: " + petugas.status +
+	   "</strong>"
+   )
 });
-
-// L.marker([-7.2575, 112.7521], {icon : trafoIcon}).addTo(mymap); //hardcode
-L.marker([-7.2575, 112.7621], {icon : iconTeknisi}).addTo(mymap);//hardcode
