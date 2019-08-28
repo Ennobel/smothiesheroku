@@ -6,4 +6,8 @@ router.get('/',
   require("../controller/index").show
 );
 
+router.get('/api/v1/Trafo/get_location',
+  require("../controller/trafo").getLocation
+);
+
 module.exports = router;
