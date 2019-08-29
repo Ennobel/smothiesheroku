@@ -6,11 +6,17 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "acorn": "^7.0.0",
+    "acorn-jsx": "^5.0.2",
+    "admin-bro": "^1.1.2",
+    "admin-bro-expressjs": "^0.2.0",
+    "admin-bro-sequelizejs": "^0.2.2",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "eslint": "^6.2.1",
     "express": "~4.16.1",
+    "express-session": "^1.16.2",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "jsonwebtoken": "^8.5.1",
