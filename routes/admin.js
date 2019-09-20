@@ -17,6 +17,9 @@ const adminBro = new AdminBro({
   branding: {
     companyName: 'SMOTHIE',
   },
+  dashboard: {
+    component: AdminBro.require('../public/dashboard/map.jsx') 
+  }
 })
 
 // hardcode

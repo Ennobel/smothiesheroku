@@ -5,14 +5,17 @@
   "scripts": {
     "start": "node ./bin/www"
   },
+  "engines": {
+    "node": "10.15.3"
+  },
   "dependencies": {
     "acorn": "^7.0.0",
     "acorn-jsx": "^5.0.2",
-    "admin-bro": "^1.1.2",
+    "admin-bro": "^1.1.5-beta.2",
     "admin-bro-expressjs": "^0.2.0",
     "admin-bro-sequelizejs": "^0.2.2",
     "bcryptjs": "^2.4.3",
-    "cookie-parser": "~1.4.4",
+    "cookie-parser": "^1.4.4",
     "debug": "~2.6.9",
     "eslint": "^6.2.1",
     "express": "~4.16.1",
