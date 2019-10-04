@@ -16,12 +16,6 @@
     "operatorsAliases": false
   },
   "production": {
-    "username": "rocgbfvvgvpesg",
-    "password": "dcd0fc012f06908165110b74357ac474cd6d9ec8fc37c4d53c31e1cd7b7587c6",
-    "database": "d4ivc80rkev5th",
-    "host": "ec2-54-83-9-169.compute-1.amazonaws.com",
     "use_env_variable": "DATABASE_URL",
-    "dialect": "postgres",
-    "operatorsAliases": false
   }
 }
