@@ -7,10 +7,10 @@ export default class Map extends React.Component{
         const esri = document.createElement("script");
     
         leaflet.src = "https://unpkg.com/leaflet/dist/leaflet.js";
-        leaflet.async = true;
+        leaflet.async = false;
     
         esri.src = "https://unpkg.com/leaflet/dist/leaflet.js";
-        esri.async = true;
+        esri.async = false;
     
         map.src = "javascripts/map.js";
         map.async = true;
