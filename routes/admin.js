@@ -12,7 +12,12 @@ const adminBro = new AdminBro({
         options: {
             parent: { name: "Model" }
         }  
-    }
+    },
+    { resource: sequelizeDB.sequelize.models.Petugas, 
+      options: {
+          parent: { name: "Model" }
+      }  
+  }
   ],
   branding: {
     companyName: 'SMOTHIE',
