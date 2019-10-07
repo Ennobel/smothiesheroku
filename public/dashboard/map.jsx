@@ -20,9 +20,14 @@ export default class Map extends React.Component{
         document.body.appendChild(map);
     }
     render(){
+        var mapsytle = {
+            margin: 0, padding: 0,  
+            width: '100%', 
+            height: '100%'
+        }
         return(
-            <div id="map">
-                
+            <div id="map" style={mapsytle}>
+
             </div>
         )
     }    
