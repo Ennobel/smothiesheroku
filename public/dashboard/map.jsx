@@ -24,7 +24,7 @@ export default class Map extends React.Component{
            position: 'absolute',
            top: 0,
            bottom: 0,
-           width: 100%            
+           width: '100%'            
         }
         return(
             <div id="map" style={mapsytle}>
