@@ -26,7 +26,7 @@ export default class Map extends React.Component{
             height: '400px'
         }
         return(
-            <div id="map" style={mapsytle}>
+            <div id="map" style={{height : '400px'}}>
 
             </div>
         )
