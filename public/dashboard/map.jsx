@@ -1,5 +1,5 @@
 import React from 'react'
-import 'leaflet/dist/leaflet.css';
+import '//cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css';
 export default class Map extends React.Component{
     componentDidMount () {
         const leaflet = document.createElement("script");
