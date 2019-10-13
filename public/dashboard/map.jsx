@@ -1,6 +1,5 @@
 import React from 'react'
 import 'https://unpkg.com/leaflet/dist/leaflet.css';
-import 'leaflet/dist/leaflet.css';
 export default class Map extends React.Component{
     componentDidMount () {
         const leaflet = document.createElement("script");
@@ -23,8 +22,8 @@ export default class Map extends React.Component{
     render(){
         var mapsytle = {
             margin: 0, padding: 0,  
-            width: 'auto', 
-            height: 'auto'
+            width: '80%', 
+            height: '400px'
         }
         return(
             <div id="map" style={mapsytle}>
