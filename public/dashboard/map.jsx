@@ -27,7 +27,7 @@ export default class Map extends React.Component{
            width: '100%'            
         }
         return(
-            <div id="map" style={mapsytle}>
+            <div id="map" style={{ height: "100vh" }}>
 
             </div>
         )
