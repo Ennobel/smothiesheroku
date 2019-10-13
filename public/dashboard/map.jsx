@@ -1,5 +1,5 @@
 import React from 'react'
-import '//cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css';
+import 'https://unpkg.com/leaflet/dist/leaflet.css';
 export default class Map extends React.Component{
     componentDidMount () {
         const leaflet = document.createElement("script");
@@ -20,13 +20,14 @@ export default class Map extends React.Component{
         document.body.appendChild(map);
     }
     render(){
-        var mapsytle = {
-            margin: 0, padding: 0,  
-            width: '80%', 
-            height: '400px'
+        var mapsytle = { 
+           position: 'absolute',
+           top: 0,
+           bottom: 0,
+           width: 100%            
         }
         return(
-            <div id="map" style={{height : '400px'}}>
+            <div id="map" style={mapsytle}>
 
             </div>
         )
