@@ -26,7 +26,7 @@ export default class Map extends React.Component{
            bottom: 0
         }
         return(
-            <div id="map" class="col-xs-12 col-sm-9  margin-zero map-padding" style={{height: 100%}}>
+            <div id="map" class="col-xs-12 col-sm-9  margin-zero map-padding" style={{height : '100%'}}>
 
             </div>
         )
