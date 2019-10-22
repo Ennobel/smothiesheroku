@@ -8,3 +8,7 @@ exports.getLocation = (req, res) => {
         }))
     });
 }
+
+    exports.updateTrafoStatus = (req, res) => {
+        res.send(req.body);
+    }
