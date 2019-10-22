@@ -1,4 +1,5 @@
 const trafo = require('../models').Trafo;
+const { validationResult } = require('express-validator');
 
 exports.getLocation = (req, res) => {
     trafo.findAll()
@@ -9,6 +10,10 @@ exports.getLocation = (req, res) => {
     });
 }
 
-    exports.updateTrafoStatus = (req, res) => {
-        res.send(req.body);
+    exports.updateTrafoStatus =  (req, res) => {
+            const erors = validationResult(req);
+            if(!erors.isEmpty()){
+                return res.status(400).json({erors: erors.array()})
+            }
+            res.send(req.body);
     }
