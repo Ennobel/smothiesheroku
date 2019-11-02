@@ -1,5 +1,4 @@
 const trafo = require('../models').Trafo;
-const { body } = require('express-validator/check');
 const { validationResult } = require('express-validator');
 
 exports.getLocation = (req, res) => {
@@ -11,27 +10,10 @@ exports.getLocation = (req, res) => {
     });
 }
 
-exports.updateTrafoStatus = (req, res) => {
-    try{
-        const errors = validationResult(req);
-        if(!errors.isEmpty()){
-            res.status(403).json(errors);
-        } else {
-            res.send(req.body);
+exports.updateTrafoStatus =  (req, res) => {
+        const erors = validationResult(req);
+        if(!erors.isEmpty()){
+            return res.status(400).json({erors: erors.array()})
         }
-    } catch(err){
-        res.status(404).json(err);
-    }
-}
-
-exports.validate = (method) => {
-    console.log("validatessss");
-    switch(method){
-        case 'statusValidation' : {
-            return [
-                body('ir', "IR DOESN'T EXiST").exists(),
-                body('is', "IS DOESN'T EXiST").exists()
-            ]
-        }
-    }
+        res.send(req.body);
 }
