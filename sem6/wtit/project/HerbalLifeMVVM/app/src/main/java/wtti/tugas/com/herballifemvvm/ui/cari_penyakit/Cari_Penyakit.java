@@ -1,0 +1,12 @@
+package wtti.tugas.com.herballifemvvm.ui.cari_penyakit;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class Cari_Penyakit extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+}
