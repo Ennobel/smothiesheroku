@@ -30,12 +30,6 @@ trafo_array.forEach(trafo => {
 	trafoMarker.bindPopup(
 		"<strong>" +
 		"id: " + trafo.id + 
-		"<br>Ir: " + trafo.Ir + " Is: " + trafo.Is + 
-		"<br>It: " + trafo.It + " Vs: " + trafo.Vs + 
-		"<br>Vr: " + trafo.Vr + " Vt: " + trafo.Vt + 
-		"<br>f: " + trafo.f + " PF: " + trafo.PF +
-		"<br>KWH: " + trafo.KWH + " KVAR: " + trafo.KVAR + 
-		"<br>THDI: " + trafo.THDI + " THDV: " + trafo.THDV + 
 		"<br>status: " + trafo.status + 
 		"<strong>" 
 	);
