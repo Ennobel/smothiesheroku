@@ -23,7 +23,7 @@ const adminBro = new AdminBro({
     companyName: 'SMOTHIE',
   },
   dashboard: {
-    component: AdminBro.require('../public/dashboard/test.js') 
+    component: AdminBro.require('../public/dashboard/map.js') 
   }
 })
 
